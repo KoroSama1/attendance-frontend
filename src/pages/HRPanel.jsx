@@ -60,7 +60,7 @@ export default function HRPanel() {
         <table className="min-w-full table-auto border-collapse">
           <thead>
             <tr className="bg-blue-50">
-              <th className="border px-4 py-2">#</th>
+              {/* <th className="border px-4 py-2">#</th> */}
               <th className="border px-4 py-2">Employee</th>
               <th className="border px-4 py-2">Date</th>
               <th className="border px-4 py-2">Check-in</th>
@@ -72,7 +72,7 @@ export default function HRPanel() {
           <tbody>
             {attendance.map((a, i) => (
               <tr key={i} className="text-center">
-                <td className="border px-4 py-2">{i + 1}</td>
+                {/* <td className="border px-4 py-2">{i + 1}</td> */}
                 <td className="border px-4 py-2">{a.employee_id}</td>
                 <td className="border px-4 py-2">{new Date(a.attendance_date).toLocaleDateString()}</td>
                 <td className="border px-4 py-2">{new Date(a.check_in_time).toLocaleTimeString()}</td>
