@@ -70,7 +70,14 @@ export default function HRPanel() {
             </tr>
           </thead>
           <tbody>
-            {attendance.map((a, i) => (
+            {attendance.length === 0 ? (
+              <tr>
+                <td colSpan="7" className="border px-4 py-4 text-center text-gray-500">
+                  No attendance records found in the database
+                </td>
+              </tr>
+            ):(
+            attendance.map((a, i) => (
               <tr key={i} className="text-center">
                 <td className="border px-4 py-2">{i + 1}</td>
                 <td className="border px-4 py-2">{a.employee_id}</td>
@@ -89,6 +96,7 @@ export default function HRPanel() {
                 </td>
                 <td className="border px-4 py-2">{a.is_on_site ? 'Yes' : 'No'}</td>
               </tr>
+              )
             ))}
           </tbody>
         </table>
