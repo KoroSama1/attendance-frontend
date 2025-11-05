@@ -76,10 +76,10 @@ export default function HRPanel() {
                 <td className="border px-4 py-2">{new Date(a.check_in_time).toLocaleTimeString()}</td>
                 <td className="border px-4 py-2">
                   <img
-                    src={`http://localhost:5000${a.image_path}`}
+                    src={`https://attendance-backend-6i1v.onrender.com${a.image_path}`}
                     alt="Employee"
                     className="w-16 h-16 object-cover mx-auto rounded"
-                    onClick={()=> setSelectedImage(`http://localhost:5000${a.image_path}`)}
+                    onClick={()=> setSelectedImage(`https://attendance-backend-6i1v.onrender.com${a.image_path}`)}
                   />
                 </td>
                 <td className="border px-4 py-2 break-words whitespace-normal max-w-xs">
