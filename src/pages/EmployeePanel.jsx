@@ -42,7 +42,7 @@ export default function EmployeePanel() {
         <button className="px-4 py-2 bg-green-600 text-white rounded" onClick={submitAttendance}>Submit Attendance</button>
       </div>
 
-      {status && <p className="mt-3 font-semibold">{status}</p>}
+      {status && <p className="mt-3 font-semibold bg-yellow-200 text-black rounded p-2">{status}</p>}
       {image && <img src={image} alt="captured" className="w-40 h-40 object-cover mt-4 rounded" />}
     </div>
   )
