@@ -80,7 +80,7 @@ export default function HRPanel() {
             attendance.map((a, i) => (
               <tr key={i} className="text-center">
                 <td className="border px-4 py-2">{i + 1}</td>
-                <td className="border px-4 py-2">{a.Employees?.fisrt_name} {a.Employees?.last_name || ""}</td>
+                <td className="border px-4 py-2">{a.employee_id}</td>
                 <td className="border px-4 py-2">{new Date(a.attendance_date).toLocaleDateString()}</td>
                 <td className="border px-4 py-2">{new Date(a.check_in_time).toLocaleTimeString()}</td>
                 <td className="border px-4 py-2">
